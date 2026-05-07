@@ -5,12 +5,9 @@ services:
     plan: free
     region: singapore
     branch: main
-    dockerfilePath: Dockerfile
+    dockerfilePath: dockerfile
 
     envVars:
-      - key: N8N_HOST
-        value: 0.0.0.0
-
       - key: N8N_PORT
         value: 5678
 
@@ -18,13 +15,7 @@ services:
         value: https
 
       - key: WEBHOOK_URL
-        value: https://n8n-render-r847.onrender.com/
-
-      - key: DB_TYPE
-        value: postgresdb
-
-      - key: DB_POSTGRESDB_CONNECTION_STRING
-        value: postgresql://n8n_practice_lx28_user:UdSq567QCArCjAKrIppDjM1UCdSuc2Bj@dpg-d7u39dpkh4rs738eji3g-a.singapore-postgres.render.com:5432/n8n_practice_lx28
+        value: https://n8n-render-r847.onrender.com
 
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
